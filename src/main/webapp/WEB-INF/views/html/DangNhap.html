@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html>
+
+<head>
+</head>
+
+<body>
+	<style>
+body .a {
+	width: 30%;
+	height: 10%;
+	display: inline-block;
+	border-color: red;
+	/* 	border: 1px solid red; */
+	margin-left: 35%;
+	margin-top: 10%;
+}
+
+body #email {
+	margin: 2%;
+	margin-left: 11%;
+}
+
+body #pass {
+	margin: 2%;
+	margin-left: 4.5%;
+}
+
+body #sub {
+	margin: 2%;
+	margin-left: 10%;
+}
+
+body #res {
+	margin: 2%;
+	margin-left: 20%;
+}
+</style>
+	<div class="a">
+		<form ng-submit="onLogin()" name="form" novalidate="" ng-controller="LoginCtrl">
+			Email: <input id="email" type="email" ng-model="_email"
+				placeholder="yourmail" required="" ng-minlength="6"></input>
+			 <br> </br> 
+			 Password: <input
+				id="pass" type="password" ng-model="_pass" placeholder="password" required="" ng-minlength="6"></input>
+			<br /> <br /> <input id="sub" type="submit" value="Login" /> <input
+				id="res" type="reset" value="Reset" />
+		</form>
+	</div>
+</body>
+</html>
